@@ -1,63 +1,183 @@
-<<<<<<< HEAD
-<p align="center"><a href="https://laravel.com" target="_blank"><img src="https://raw.githubusercontent.com/laravel/art/master/logo-lockup/5%20SVG/2%20CMYK/1%20Full%20Color/laravel-logolockup-cmyk-red.svg" width="400" alt="Laravel Logo"></a></p>
+# Stockify – Inventory Management System
 
-<p align="center">
-<a href="https://github.com/laravel/framework/actions"><img src="https://github.com/laravel/framework/workflows/tests/badge.svg" alt="Build Status"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/dt/laravel/framework" alt="Total Downloads"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/v/laravel/framework" alt="Latest Stable Version"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/l/laravel/framework" alt="License"></a>
-</p>
+**Stockify** adalah aplikasi manajemen inventaris berbasis web yang dibangun menggunakan Laravel. Aplikasi ini dirancang untuk membantu pengelolaan data barang, pemantauan stok, transaksi barang masuk dan keluar, serta pembuatan laporan inventaris secara lebih terstruktur.
 
-## About Laravel
+## ✨ Fitur Utama
 
-Laravel is a web application framework with expressive, elegant syntax. We believe development must be an enjoyable and creative experience to be truly fulfilling. Laravel takes the pain out of development by easing common tasks used in many web projects, such as:
+### 1. Dashboard
+- Ringkasan jumlah produk dan kategori.
+- Informasi stok barang.
+- Pemantauan barang dengan stok menipis atau habis.
 
-- [Simple, fast routing engine](https://laravel.com/docs/routing).
-- [Powerful dependency injection container](https://laravel.com/docs/container).
-- Multiple back-ends for [session](https://laravel.com/docs/session) and [cache](https://laravel.com/docs/cache) storage.
-- Expressive, intuitive [database ORM](https://laravel.com/docs/eloquent).
-- Database agnostic [schema migrations](https://laravel.com/docs/migrations).
-- [Robust background job processing](https://laravel.com/docs/queues).
-- [Real-time event broadcasting](https://laravel.com/docs/broadcasting).
+### 2. Manajemen Produk
+- Menambahkan, melihat, mengubah, dan menghapus data produk.
+- Mengelola kategori produk.
+- Menyimpan informasi lokasi penyimpanan barang.
+- Mengatur stok minimum produk.
 
-Laravel is accessible, powerful, and provides tools required for large, robust applications.
+### 3. Manajemen Supplier
+- Menambahkan dan mengelola data supplier.
+- Menyimpan informasi perusahaan, kontak, alamat, dan catatan supplier.
 
-## Learning Laravel
+### 4. Pembelian dan Stok Masuk
+- Mencatat transaksi pembelian barang.
+- Menghubungkan pembelian dengan supplier.
+- Menyimpan detail barang yang dibeli.
+- Memperbarui stok produk berdasarkan transaksi pembelian.
 
-Laravel has the most extensive and thorough [documentation](https://laravel.com/docs) and video tutorial library of all modern web application frameworks, making it a breeze to get started with the framework.
+### 5. Stok Keluar
+- Mencatat pengeluaran barang.
+- Memperbarui jumlah stok secara otomatis.
+- Menyimpan riwayat pergerakan stok.
 
-In addition, [Laracasts](https://laracasts.com) contains thousands of video tutorials on a range of topics including Laravel, modern PHP, unit testing, and JavaScript. Boost your skills by digging into our comprehensive video library.
+### 6. Stock Opname
+- Membandingkan stok sistem dengan stok fisik.
+- Menghitung selisih stok secara otomatis.
+- Menyesuaikan stok produk berdasarkan hasil pemeriksaan.
+- Menyimpan riwayat stock opname.
 
-You can also watch bite-sized lessons with real-world projects on [Laravel Learn](https://laravel.com/learn), where you will be guided through building a Laravel application from scratch while learning PHP fundamentals.
+### 7. Laporan
+- Menampilkan laporan pergerakan stok.
+- Menampilkan laporan stock opname.
+- Menyediakan filter berdasarkan tanggal dan pencarian.
+- Mengekspor laporan ke format CSV.
+- Mendukung pencetakan laporan.
 
-## Agentic Development
+### 8. Manajemen Pengguna
+- Login dan logout.
+- Pengaturan hak akses berdasarkan role Admin dan Staff.
+- Pengelolaan akun pengguna.
+- Mengubah password.
 
-Laravel's predictable structure and conventions make it ideal for AI coding agents like Claude Code, Cursor, and GitHub Copilot. Install [Laravel Boost](https://laravel.com/docs/ai) to supercharge your AI workflow:
+### 9. Aktivitas dan Backup
+- Mencatat aktivitas pengguna.
+- Menyediakan fitur backup dan restore database.
+
+## 🛠️ Teknologi yang Digunakan
+
+| Teknologi | Keterangan |
+|---|---|
+| Laravel | Framework backend |
+| PHP | Bahasa pemrograman backend |
+| MySQL / MariaDB | Database |
+| HTML | Struktur halaman |
+| CSS | Tampilan antarmuka |
+| JavaScript | Interaksi halaman |
+| Vite | Pengelolaan aset frontend |
+
+## 📋 Persyaratan Sistem
+
+Sebelum menjalankan aplikasi, pastikan perangkat sudah memiliki:
+
+- PHP sesuai persyaratan versi Laravel yang digunakan.
+- Composer.
+- MySQL atau MariaDB.
+- Node.js dan NPM.
+- Git.
+
+## 🚀 Cara Instalasi
+
+**1. Clone repository**
 
 ```bash
-composer require laravel/boost --dev
-
-php artisan boost:install
+git clone https://github.com/MuhammadIkhsanAlFajri/Stockify.git
 ```
 
-Boost provides your agent 15+ tools and skills that help agents build Laravel applications while following best practices.
+**2. Masuk ke direktori project**
 
-## Contributing
+```bash
+cd Stockify
+```
 
-Thank you for considering contributing to the Laravel framework! The contribution guide can be found in the [Laravel documentation](https://laravel.com/docs/contributions).
+**3. Install dependency PHP**
 
-## Code of Conduct
+```bash
+composer install
+```
 
-In order to ensure that the Laravel community is welcoming to all, please review and abide by the [Code of Conduct](https://laravel.com/docs/contributions#code-of-conduct).
+**4. Buat file environment**
 
-## Security Vulnerabilities
+Windows:
 
-If you discover a security vulnerability within Laravel, please send an e-mail to Taylor Otwell via [taylor@laravel.com](mailto:taylor@laravel.com). All security vulnerabilities will be promptly addressed.
+```powershell
+Copy-Item .env.example .env
+```
 
-## License
+Linux / macOS:
 
-The Laravel framework is open-sourced software licensed under the [MIT license](https://opensource.org/licenses/MIT).
-=======
-# Stockify
-Aplikasi manajemen inventaris dan stok barang berbasis Laravel.
->>>>>>> 67e5643bc66d6a9333141ef653ce378c6cae6012
+```bash
+cp .env.example .env
+```
+
+**5. Generate application key**
+
+```bash
+php artisan key:generate
+```
+
+**6. Konfigurasi database**
+
+Buat database baru, kemudian sesuaikan konfigurasi pada file `.env`:
+
+```env
+DB_CONNECTION=mysql
+DB_HOST=127.0.0.1
+DB_PORT=3306
+DB_DATABASE=stockify_db
+DB_USERNAME=root
+DB_PASSWORD=
+```
+
+Sesuaikan nama database, username, password, dan port dengan konfigurasi lokal masing-masing.
+
+**7. Jalankan migration**
+
+```bash
+php artisan migrate
+```
+
+**8. Install dependency frontend**
+
+```bash
+npm install
+```
+
+**9. Build aset frontend**
+
+```bash
+npm run build
+```
+
+**10. Jalankan aplikasi**
+
+```bash
+php artisan serve
+```
+
+Buka aplikasi melalui alamat:
+
+```text
+http://127.0.0.1:8000
+```
+
+## 🔐 Catatan Keamanan
+
+- Jangan mengunggah file `.env` ke repository publik.
+- Jangan membagikan password database atau application key.
+- Pastikan konfigurasi database sudah benar sebelum menjalankan migration.
+
+## 📌 Status Pengembangan
+
+Stockify dikembangkan secara bertahap. Fitur utama pengelolaan inventaris, transaksi stok, stock opname, laporan, serta manajemen pengguna telah dibuat.
+
+## 👨‍💻 Developer
+
+**Muhammad Ikhsan Al Fajri**
+
+GitHub: [@MuhammadIkhsanAlFajri](https://github.com/MuhammadIkhsanAlFajri)
+
+---
+
+<p align="center">
+  Made with ❤️ using Laravel
+</p>
