@@ -1,123 +1,123 @@
-# Stockify – Inventory Management System
+# 📦 Stockify
+### Inventory Management System
 
-**Stockify** adalah aplikasi manajemen inventaris berbasis web yang dibangun menggunakan Laravel. Aplikasi ini dirancang untuk membantu pengelolaan data barang, pemantauan stok, transaksi barang masuk dan keluar, serta pembuatan laporan inventaris secara lebih terstruktur.
+<p align="center">
+  A web-based inventory management system built with Laravel.
+  <br />
+  Manage products, monitor stock levels, record transactions, and organize inventory reports in one place.
+</p>
 
-## ✨ Fitur Utama
+<p align="center">
+  <img src="https://img.shields.io/badge/Laravel-Framework-FF2D20?style=for-the-badge&logo=laravel&logoColor=white" alt="Laravel" />
+  <img src="https://img.shields.io/badge/PHP-Backend-777BB4?style=for-the-badge&logo=php&logoColor=white" alt="PHP" />
+  <img src="https://img.shields.io/badge/MySQL-Database-4479A1?style=for-the-badge&logo=mysql&logoColor=white" alt="MySQL" />
+  <img src="https://img.shields.io/badge/Status-Development-blue?style=for-the-badge" alt="Development" />
+</p>
 
-### 1. Dashboard
-- Ringkasan jumlah produk dan kategori.
-- Informasi stok barang.
-- Pemantauan barang dengan stok menipis atau habis.
+---
 
-### 2. Manajemen Produk
-- Menambahkan, melihat, mengubah, dan menghapus data produk.
-- Mengelola kategori produk.
-- Menyimpan informasi lokasi penyimpanan barang.
-- Mengatur stok minimum produk.
+## 📖 About The Project
 
-### 3. Manajemen Supplier
-- Menambahkan dan mengelola data supplier.
-- Menyimpan informasi perusahaan, kontak, alamat, dan catatan supplier.
+**Stockify** merupakan aplikasi manajemen inventaris berbasis web yang dikembangkan menggunakan framework Laravel.
 
-### 4. Pembelian dan Stok Masuk
-- Mencatat transaksi pembelian barang.
-- Menghubungkan pembelian dengan supplier.
-- Menyimpan detail barang yang dibeli.
-- Memperbarui stok produk berdasarkan transaksi pembelian.
+Aplikasi ini membantu proses pengelolaan persediaan barang, mulai dari pencatatan produk, pengelolaan supplier, transaksi pembelian, pemantauan stok, hingga pembuatan laporan inventaris.
 
-### 5. Stok Keluar
-- Mencatat pengeluaran barang.
-- Memperbarui jumlah stok secara otomatis.
-- Menyimpan riwayat pergerakan stok.
+Stockify dirancang untuk membuat pengelolaan inventaris menjadi lebih terorganisir, efisien, dan mudah dipantau.
 
-### 6. Stock Opname
-- Membandingkan stok sistem dengan stok fisik.
-- Menghitung selisih stok secara otomatis.
-- Menyesuaikan stok produk berdasarkan hasil pemeriksaan.
-- Menyimpan riwayat stock opname.
+## 📑 Table of Contents
 
-### 7. Laporan
-- Menampilkan laporan pergerakan stok.
-- Menampilkan laporan stock opname.
-- Menyediakan filter berdasarkan tanggal dan pencarian.
-- Mengekspor laporan ke format CSV.
-- Mendukung pencetakan laporan.
+- [Features](#-features)
+- [Tech Stack](#-tech-stack)
+- [Requirements](#-requirements)
+- [Installation](#-installation)
+- [Project Structure](#-project-structure)
+- [Security Notes](#-security-notes)
+- [Developer](#-developer)
 
-### 8. Manajemen Pengguna
-- Login dan logout.
-- Pengaturan hak akses berdasarkan role Admin dan Staff.
-- Pengelolaan akun pengguna.
-- Mengubah password.
+## ✨ Features
 
-### 9. Aktivitas dan Backup
-- Mencatat aktivitas pengguna.
-- Menyediakan fitur backup dan restore database.
-
-## 🛠️ Teknologi yang Digunakan
-
-| Teknologi | Keterangan |
+| Feature | Description |
 |---|---|
-| Laravel | Framework backend |
-| PHP | Bahasa pemrograman backend |
-| MySQL / MariaDB | Database |
-| HTML | Struktur halaman |
-| CSS | Tampilan antarmuka |
-| JavaScript | Interaksi halaman |
-| Vite | Pengelolaan aset frontend |
+| 📊 **Dashboard** | Menampilkan ringkasan inventaris, informasi stok, dan indikator stok menipis atau habis. |
+| 📦 **Product Management** | Mengelola data produk, kategori, lokasi penyimpanan, dan stok minimum. |
+| 🏢 **Supplier Management** | Mengelola informasi supplier, perusahaan, kontak, dan alamat. |
+| 🛒 **Purchase Management** | Mencatat transaksi pembelian dan memperbarui stok berdasarkan barang yang diterima. |
+| 📤 **Stock Out** | Mencatat pengeluaran barang dan memperbarui jumlah stok. |
+| 🔍 **Stock Opname** | Membandingkan stok sistem dengan stok fisik serta mencatat selisihnya. |
+| 📈 **Reports** | Menampilkan laporan pergerakan stok dan stock opname, dengan filter, ekspor CSV, dan fitur cetak. |
+| 👥 **User Management** | Mengelola akun pengguna dengan hak akses Admin dan Staff. |
+| 📝 **Activity Logs** | Mencatat aktivitas pengguna di dalam aplikasi. |
+| 💾 **Database Backup** | Menyediakan fitur backup dan restore database. |
 
-## 📋 Persyaratan Sistem
+## 🛠️ Tech Stack
 
-Sebelum menjalankan aplikasi, pastikan perangkat sudah memiliki:
+Teknologi utama yang digunakan dalam pengembangan Stockify:
 
-- PHP sesuai persyaratan versi Laravel yang digunakan.
+| Technology | Purpose |
+|---|---|
+| **Laravel** | Backend framework |
+| **PHP** | Server-side programming |
+| **MySQL / MariaDB** | Database management |
+| **HTML5** | Page structure |
+| **CSS3** | User interface styling |
+| **JavaScript** | Frontend interaction |
+| **Vite** | Frontend asset bundling |
+
+## 📋 Requirements
+
+Pastikan perangkat telah memiliki beberapa kebutuhan berikut:
+
+- PHP yang kompatibel dengan versi Laravel proyek.
 - Composer.
 - MySQL atau MariaDB.
 - Node.js dan NPM.
 - Git.
 
-## 🚀 Cara Instalasi
+## 🚀 Installation
 
-**1. Clone repository**
+Ikuti langkah-langkah berikut untuk menjalankan Stockify secara lokal.
+
+### 1. Clone Repository
 
 ```bash
 git clone https://github.com/MuhammadIkhsanAlFajri/Stockify.git
 ```
 
-**2. Masuk ke direktori project**
+### 2. Navigate to Project Directory
 
 ```bash
 cd Stockify
 ```
 
-**3. Install dependency PHP**
+### 3. Install PHP Dependencies
 
 ```bash
 composer install
 ```
 
-**4. Buat file environment**
+### 4. Create Environment File
 
-Windows:
+**Windows PowerShell:**
 
 ```powershell
 Copy-Item .env.example .env
 ```
 
-Linux / macOS:
+**Linux / macOS:**
 
 ```bash
 cp .env.example .env
 ```
 
-**5. Generate application key**
+### 5. Generate Application Key
 
 ```bash
 php artisan key:generate
 ```
 
-**6. Konfigurasi database**
+### 6. Configure Database
 
-Buat database baru, kemudian sesuaikan konfigurasi pada file `.env`:
+Buat database dengan nama `stockify_db`, kemudian sesuaikan konfigurasi pada file `.env`.
 
 ```env
 DB_CONNECTION=mysql
@@ -128,56 +128,92 @@ DB_USERNAME=root
 DB_PASSWORD=
 ```
 
-Sesuaikan nama database, username, password, dan port dengan konfigurasi lokal masing-masing.
+Sesuaikan port, username, dan password dengan konfigurasi database lokal.
 
-**7. Jalankan migration**
+### 7. Run Database Migrations
 
 ```bash
 php artisan migrate
 ```
 
-**8. Install dependency frontend**
+### 8. Install Frontend Dependencies
 
 ```bash
 npm install
 ```
 
-**9. Build aset frontend**
+### 9. Build Frontend Assets
 
 ```bash
 npm run build
 ```
 
-**10. Jalankan aplikasi**
+### 10. Start Development Server
 
 ```bash
 php artisan serve
 ```
 
-Buka aplikasi melalui alamat:
+Buka browser dan akses:
 
 ```text
 http://127.0.0.1:8000
 ```
 
-## 🔐 Catatan Keamanan
+## 📁 Project Structure
+
+Struktur direktori utama Laravel yang digunakan:
+
+```text
+Stockify/
+├── app/
+│   ├── Http/
+│   │   └── Controllers/
+│   ├── Models/
+│   └── Providers/
+├── database/
+│   ├── migrations/
+│   └── seeders/
+├── public/
+├── resources/
+│   ├── css/
+│   ├── js/
+│   └── views/
+├── routes/
+│   └── web.php
+├── storage/
+├── tests/
+├── .env.example
+├── artisan
+├── composer.json
+├── package.json
+└── README.md
+```
+
+## 🔐 Security Notes
 
 - Jangan mengunggah file `.env` ke repository publik.
-- Jangan membagikan password database atau application key.
-- Pastikan konfigurasi database sudah benar sebelum menjalankan migration.
+- Jangan membagikan kredensial database maupun application key.
+- Gunakan konfigurasi database sendiri pada lingkungan lokal.
+- Pastikan konfigurasi keamanan sudah sesuai sebelum aplikasi digunakan di lingkungan produksi.
 
-## 📌 Status Pengembangan
+## 📌 Project Status
 
-Stockify dikembangkan secara bertahap. Fitur utama pengelolaan inventaris, transaksi stok, stock opname, laporan, serta manajemen pengguna telah dibuat.
+**Stockify is under development.**
+
+Aplikasi dikembangkan secara bertahap dengan fokus pada pengelolaan inventaris, transaksi stok, stock opname, pelaporan, dan manajemen pengguna.
 
 ## 👨‍💻 Developer
 
 **Muhammad Ikhsan Al Fajri**
 
-GitHub: [@MuhammadIkhsanAlFajri](https://github.com/MuhammadIkhsanAlFajri)
+- GitHub: [@MuhammadIkhsanAlFajri](https://github.com/MuhammadIkhsanAlFajri)
+- Repository: [Stockify](https://github.com/MuhammadIkhsanAlFajri/Stockify)
 
 ---
 
 <p align="center">
-  Made with ❤️ using Laravel
+  <b>Stockify – Simplify Your Inventory Management.</b>
+  <br />
+  Made with ❤️ using Laravel.
 </p>
